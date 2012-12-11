@@ -11,8 +11,6 @@ var fibonacci = (function(){
 		);
 	}
 
-	console.log(sequence);
-
 	return sequence;
 
 })();
