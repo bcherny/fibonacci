@@ -48,19 +48,19 @@ document.addEventListener('mousemove', function(e) {
 ///// helpers
 
 function offset(pos, n) {
-	var o, f = fibonacci, d = -5;
+	var o, f = fibonacci;
 	switch (pos) {
 		case 0:
-			o = [d, f[n-1] || d];
+			o = [0, f[n-1] || 0];
 			break;
 		case 1:
-			o = [f[n-1], -(f[n-2] || 0) + d];
+			o = [f[n-1], -(f[n-2] || 0)];
 			break;
 		case 2:
-			o = [-(f[n]-f[n-1]), -(f[n]) + d + 1];
+			o = [-(f[n]-f[n-1]), -(f[n])];
 			break;
 		case 3:
-			o = [-f[n], d];
+			o = [-f[n], 0];
 			break;
 	}
 

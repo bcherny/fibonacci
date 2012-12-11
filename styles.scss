@@ -7,39 +7,28 @@ html,body {
 }
 
 div {
-	border: solid #fff;
 	position: relative;
 }
 
 $initial_size: 1px;
-$weight: 5px;
 
 .pos-0 {
 	border-radius: 0 0 0 100%;
-	border-width: 0 0 $weight $weight;
 }
 .pos-1 {
 	border-radius: 0 0 100%;
-	border-width: 0 $weight $weight 0;
 }
 .pos-2 {
 	border-radius: 0 100% 0 0;
-	border-width: $weight $weight 0 0;
 }
 .pos-3 {
 	border-radius: 100% 0 0;
-	border-width: $weight 0 0 $weight;
 }
 
 #box {
-	border: 0;
 	height: $initial_size;
 	position: absolute;
 		left: 50%;
 		top: 50%;
 	width: $initial_size;
-
-	>.pos-0 {
-		border: 0;
-	}
 }

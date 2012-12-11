@@ -8,32 +8,16 @@ html, body {
   height: 100%;
   overflow: hidden; }
 
-div {
-  border: solid #fff;
-  position: relative; }
+div { position: relative }
 
-.pos-0 {
-  border-radius: 0 0 0 100%;
-  border-width: 0 0 5px 5px; }
-
-.pos-1 {
-  border-radius: 0 0 100%;
-  border-width: 0 5px 5px 0; }
-
-.pos-2 {
-  border-radius: 0 100% 0 0;
-  border-width: 5px 5px 0 0; }
-
-.pos-3 {
-  border-radius: 100% 0 0;
-  border-width: 5px 0 0 5px; }
+.pos-0 { border-radius: 0 0 0 100% }
+.pos-1 { border-radius: 0 0 100% }
+.pos-2 { border-radius: 0 100% 0 0 }
+.pos-3 { border-radius: 100% 0 0 }
 
 #box {
-  border: 0;
   height: 1px;
   position: absolute;
   left: 50%;
   top: 50%;
   width: 1px; }
-  #box > .pos-0 {
-    border: 0; }
